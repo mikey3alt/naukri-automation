@@ -25,7 +25,7 @@ jobs:
         env:
           NAUKRI_EMAIL: ${{ secrets.NAUKRI_EMAIL }}
           NAUKRI_PASSWORD: ${{ secrets.NAUKRI_PASSWORD }}
-        run: python update_naukri.py
+        run: python naukri_update.py
 
       - name: Upload Debug Data on Failure
         if: failure()
